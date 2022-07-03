@@ -12,10 +12,13 @@ public class CalculateTest {
   }
 
   @Test
-  public void testSum_all() {
+  public void testSum2() {
     Calculate calculate = new Calculate();
     int expected = 55;
-    int sum = calculate.sum_all(1, 10);
+    int sum = 0;
+    for (int i = 1; i <= 10; i++) {
+      sum = calculate.sum(sum, i);
+    }
     assertEquals(expected, sum);
   }
 
@@ -35,15 +38,15 @@ public class CalculateTest {
 
   // @Test
   // public void testSum_even() {
-  // Calculate calculate = new Calculate();
-  // int expected = 30;
-  // int sum = 0;
-  // for (int i = 1; i <= 10; i++) {
-  // if (i % 2 == 0) {
-  // sum = calculate.sum(sum, i);
-  // }
-  // }
-  // assertEquals(expected, sum);
+  //   Calculate calculate = new Calculate();
+  //   int expected = 30;
+  //   int sum = 0;
+  //   for (int i = 1; i <= 10; i++) {
+  //     if (i % 2 == 0) {
+  //       sum = calculate.sum(sum, i);
+  //     }
+  //   }
+  //   assertEquals(expected, sum);
   // }
 
   @Test

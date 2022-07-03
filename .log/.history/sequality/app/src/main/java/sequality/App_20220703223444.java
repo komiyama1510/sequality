@@ -17,16 +17,17 @@ public class App {
     double ave1 = calc.average(sum1, 2);
     System.out.println("Sum of 2 and 3 is " + sum1 + ".Average is " + ave1 + ".");
 
-    int start = 1;
-    int end = 10;
-    int sum2 = calc.sum_all(start, end);
-    double ave2 = calc.average(sum2, start + end - 1);
+    int sum2 = 0;
+    int n = 10;
+    for (int i = 1; i <= n; i++) {
+      sum2 = calc.sum(sum2, i);
+    }
+    double ave2 = calc.average(sum2, n);
     System.out.println("Sum of 1 to 10 is " + sum2 + ".Average is " + ave2 + ".");
 
-    start = 1;
-    end = 10;
-    System.out.println(
-        "Sum of odd of 1 to 10 is " + calc.sum_odd(start, end) + ".Sum of even is " + calc.sum_even(start, end) + ".");
+    int start=0;
+    int end;
+    System.out.println("Sum of odd of 1 to 10 is " + calc.sum_odd(start,end) + ".Sum of even is " + calc.sum_even(start,end) + ".");
   }
 
 }

@@ -12,39 +12,26 @@ public class CalculateTest {
   }
 
   @Test
-  public void testSum_all() {
+  public void testSum2() {
     Calculate calculate = new Calculate();
     int expected = 55;
-    int sum = calculate.sum_all(1, 10);
-    assertEquals(expected, sum);
+    int sum1 = 0;
+    for (int i = 1; i <= 10; i++) {
+      sum1 = calculate.sum(sum1, i);
+    }
+    assertEquals(expected, sum1);
   }
 
   @Test
   public void testSum_odd() {
     Calculate calculate = new Calculate();
     int expected = 25;
-    assertEquals(expected, calculate.sum_odd(1, 10));
+    int sum= 0;
+    for (int i = 0; i <=10 ; i++) {
+      sum1 = calculate.sum(sum1, i);
+    }
+    assertEquals(expected, sum1);
   }
-
-  @Test
-  public void testSum_even() {
-    Calculate calculate = new Calculate();
-    int expected = 30;
-    assertEquals(expected, calculate.sum_even(1, 10));
-  }
-
-  // @Test
-  // public void testSum_even() {
-  // Calculate calculate = new Calculate();
-  // int expected = 30;
-  // int sum = 0;
-  // for (int i = 1; i <= 10; i++) {
-  // if (i % 2 == 0) {
-  // sum = calculate.sum(sum, i);
-  // }
-  // }
-  // assertEquals(expected, sum);
-  // }
 
   @Test
   public void testAverage() {

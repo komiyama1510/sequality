@@ -21,12 +21,13 @@ public class App {
     int end = 10;
     int sum2 = calc.sum_all(start, end);
     double ave2 = calc.average(sum2, start + end - 1);
-    System.out.println("Sum of 1 to 10 is " + sum2 + ".Average is " + ave2 + ".");
+    System.out.println("Sum of " + start + " to " + end + " is " + sum2 + ".Average is " + ave2 + ".");
 
     start = 1;
     end = 10;
     System.out.println(
-        "Sum of odd of 1 to 10 is " + calc.sum_odd(start, end) + ".Sum of even is " + calc.sum_even(start, end) + ".");
+        "Sum of odd of " + start + " to " + end
+            + " is " + calc.sum_odd(start, end) + ".Sum of even is " + calc.sum_even(start, end) + ".");
   }
 
 }

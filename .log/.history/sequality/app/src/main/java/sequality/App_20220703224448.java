@@ -20,7 +20,7 @@ public class App {
     int start = 1;
     int end = 10;
     int sum2 = calc.sum_all(start, end);
-    double ave2 = calc.average(sum2, start + end - 1);
+    double ave2 = calc.average(sum2, end);
     System.out.println("Sum of 1 to 10 is " + sum2 + ".Average is " + ave2 + ".");
 
     start = 1;

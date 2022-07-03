@@ -9,9 +9,11 @@ public class Calculate {
 
     int sum = 0;
     for (int i = start; i <= end; i++) {
-      sum = sum + i;
+      if (i % 2 == 1) {
+        sum = sum + i;
+      }
     }
-    return sum;
+    return x + y;
   }
 
   public int sum_odd(int start, int end) {

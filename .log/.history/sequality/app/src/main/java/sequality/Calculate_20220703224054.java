@@ -5,13 +5,8 @@ public class Calculate {
     return x + y;
   }
 
-  public int sum_all(int start, int end) {
-
-    int sum = 0;
-    for (int i = start; i <= end; i++) {
-      sum = sum + i;
-    }
-    return sum;
+  public int sum(int x, int y) {
+    return x + y;
   }
 
   public int sum_odd(int start, int end) {
